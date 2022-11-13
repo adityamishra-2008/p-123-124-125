@@ -1,0 +1,44 @@
+
+<html>
+<head>
+  <title>Realtime Drawing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="https://th.bing.com/th/id/OIP.ek8qizF9rJsjcjivC_TQaQHaE7?pid=ImgDet&rs=1">
+  <center>
+    <div id="my_modal" class="modal fade">
+      <div style="background-color:rgb(205, 216, 56)" class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close " data-dismiss="modal">×</button>
+  <h3 class="modal-title">How to use:</h3>
+  </div>
+  <div class="modal-body">
+    <span style="color:red;" class="note">NOTE - Get Your Left And Right Wrist Closer To Eachother To Reduce The Font size And To Increase The Font Size Keep Your Left And Right Wrist Far From Each Other.</span>
+  </div>
+      </div>
+  </div>
+  
+  
+    <h3 class="btn heading">FONT MANIPULATOR
+      <button id="how_to_use" data-toggle="modal" data-target="#my_modal">How to use</button>
+      
+      <br>
+      <input type="text" id="input_id" placeholder="enter any word">
+    <button onclick="p()" id="how_to_use_2"> Type on Canvas</button>
+    <br>
+  <span id="blank">the Font size of the text will be  = 0px</span>
+    </h3>
+   
+  </center>
+  <div class="footer">Devloped by- Aditya <img style="width:5% ; height: 5%; border-radius: 20px;" src="giphy.gif"></div>
+  <script src="main.js"></script>
+</body>
+</html>
